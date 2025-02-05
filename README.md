@@ -2,4 +2,4 @@ A bunch of web hacking tools made by me in python and other languages to find vu
 
 
 
-**Use for ethical reasons and make sure you have permission, I am not responsible 
+**Dont care what you use it for but be responsible, hacking and website scanning is illegal, I am not responsible for your actions online
