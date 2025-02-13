@@ -1,0 +1,2 @@
+nmap -sS -p 1-65535 <target_ip>  # Scan all ports on a target IP
+nmap -sV <target_ip>  # Service version detection
