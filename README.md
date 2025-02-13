@@ -1,4 +1,4 @@
-A bunch of web hacking tools made by me in python and other languages to find vulnerabilities and hack
+A bunch of web penetration testing tools made by me in python and other languages to find vulnerabilities and hack
 
 
 
