@@ -31,7 +31,7 @@ def get_headers(url):
 
 # Main function to input the URL
 if __name__ == "__main__":
-    target_url = input("Enter the URL to scan (Https:// + target): ").strip()
+    target_url = input("Enter the URL to scan (https:// + target): ").strip()
     if target_url:
         get_headers(target_url)
     else:
