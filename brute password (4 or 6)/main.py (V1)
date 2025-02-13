@@ -1,0 +1,16 @@
+import itertools
+
+def brute_force_crack(length):
+    if length not in [4, 6]:
+        print("Only 4 or 6-digit passwords are supported.")
+        return
+
+    for attempt in itertools.product("0123456789", repeat=length):
+        attempt = ''.join(attempt)
+        print(f"Trying: {attempt}")  # Prints every attempt
+
+    print("All possible combinations tried.")
+
+# Example usage
+length = int(input("Enter password length (4 or 6): "))
+brute_force_crack(length)
